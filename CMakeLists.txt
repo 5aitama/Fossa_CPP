@@ -28,3 +28,7 @@ target_link_libraries(Fossa PRIVATE libglew_static)
 # Add GLFW
 add_subdirectory(lib/glfw EXCLUDE_FROM_ALL)
 target_link_libraries(Fossa PRIVATE glfw)
+
+# Add GLM
+add_subdirectory(lib/glm EXCLUDE_FROM_ALL)
+target_link_libraries(Fossa PRIVATE glm)
